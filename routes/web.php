@@ -50,3 +50,4 @@ Route::group(['prefix' => 'admin'], function() {
         return 'admin dashboard';
     });
 });
+
