@@ -56,12 +56,7 @@
                                     <!-- <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed"> -->
                                     Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
                                     <!-- </p> -->
-                                    
                                     </div>
-                                    
-                                    <!--連結路由-->
-                                    
-                                    
                                 </div>
                                 
                             </div>
@@ -72,6 +67,7 @@
                             </svg>
                             
                         </a>
+                        <!--連結路由-->
                         <a href="{{ route('hello.index') }}">Hello</a>
                         <a href = "{{route('hello.index', ['name'=>'tom'])}}">Hello2</a>
                         <a href = "/hello/">Hello3</a>

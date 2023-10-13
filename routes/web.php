@@ -29,7 +29,7 @@ Route::get('r2', function () {
     return view('welcome');
 });
 
-//練習2
+//練習4
 
 // Route::get('hello/{name}', function ($name) {
 //     return 'Hello, '.$name;
@@ -38,3 +38,15 @@ Route::get('r2', function () {
 Route::get('hello/{name?}', function ($name = 'Everybody') {
     return 'Hello, '.$name;
 })->name('hello.index');
+
+//練習5 使用者儀錶板/管理者儀錶板
+
+Route::get('dashboard', function () {
+    return 'dashboard';
+});
+
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('dashboard', function() {
+        return 'admin dashboard';
+    });
+});
